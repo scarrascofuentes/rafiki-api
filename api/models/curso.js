@@ -3,15 +3,30 @@ const Schema = mongoose.Schema;
 
 const CursoSchema = new Schema ({
 
-    idCurso: String, 
-    nivel: String, 
-    asignatura: String,
-    profesorJefe: String, 
-    salaCurso: String, 
-    totalAlumnos: Number
-    //asignaturas: []
-    //promAlumnosCurso: Number,
-    //alumnos: [], 
+    idCurso: {
+        type: String
+    },
+
+    nivel: {
+        type: String 
+    },
+
+    asignatura: {
+        type: String
+    },
+
+    profesorJefe: {
+        type: String
+    },
+
+    salaCurso: {
+        type: String
+    },
+
+    totalAlumnos: {
+        type: Number
+    }
+   
    
 });
 
